@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vetri's Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🛒 Vetri's Shop</h1>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+      <a href="cart.html">Cart 🧺 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="product-list">
+    <div class="product-card">
+      <img src="shoe.jpg" alt="Product 1">
+      <h3>Shoe</h3>
+      <p>₹499</p>
+      <button onclick="addToCart('Shoe', 499)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="bag.jpg" alt="Product 2">
+      <h3>Bag</h3>
+      <p>₹899</p>
+      <button onclick="addToCart('Bag', 899)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="watch.jpg" alt="Product 3">
+      <h3>Watch</h3>
+      <p>₹299</p>
+      <button onclick="addToCart('Watch', 299)">Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
